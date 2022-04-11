@@ -9,11 +9,41 @@ Color: c4c4c4;
 Text-Align: Center;
 Background-Color: 4b4b4b;
 }
+.Links
+{
+Color: c4c4c4;
+Text-Align: Left;
+}
+.AnimatedHead
+{
+Color: c4c4c4;
+Text-Align: Center;
+animation-name: anim;
+animation-duration: 4s;
+animation=delay: 0s;
+animation-fill-mode: both;
+animation-iteration-count:infinite;
+}
+@keyframes anim{
+0%{color: White;}
+50%{color: green;}
+100%{color: White;}
+}
 </style>
 </head>
 
 <body BgColor = "Black">
-<h1 class = "Headings"></h1>
-<h1 class = "Headings" style = "Font-Size: 300%;">A step toward a cleaner world</h1>
+<Div class = "Headings">
+<h1><a href = "https://akshanshkanojia.github.io/Web_Prog/Web_Devlopment_Assignment_02.html" class = "Links">Home</a>
+
+<a href = "https://akshanshkanojia.github.io/Web_Prog/Feedback_Page.html" class = "Links">Feedback</a>
+</h1>
+<h1 style = "Font-Size: 300%;" class = "AnimatedHead">About Green World Project
+</h1>
+<p style = "Font-Size: 200%;">
+The green world porject focus on minimizing the environmental damage caused by over whelming pollution and aforestation.
+</p>
+</Div>
+
 </body>
 </html>

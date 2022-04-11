@@ -9,11 +9,70 @@ Color: c4c4c4;
 Text-Align: Center;
 Background-Color: 4b4b4b;
 }
+.Links
+{
+Color: c4c4c4;
+Text-Align: Left;
+}
+.AnimatedHead
+{
+Color: c4c4c4;
+Text-Align: Center;
+animation-name: anim;
+animation-duration: 4s;
+animation=delay: 0s;
+animation-fill-mode: both;
+animation-iteration-count:infinite;
+}
+@keyframes anim{
+0%{color: White;}
+50%{color: green;}
+100%{color: White;}
+}
 </style>
 </head>
 
 <body BgColor = "Black">
-<h1 class = "Headings"></h1>
-<h1 class = "Headings" style = "Font-Size: 300%;">A step toward a cleaner world</h1>
+<Div class = "Headings">
+<h1><a href = "https://akshanshkanojia.github.io/Web_Prog/About_Page.html" class = "Links">About</a>
+
+<a href = "https://akshanshkanojia.github.io/Web_Prog/Feedback_Page.html" class = "Links">Feedback</a>
+</h1>
+<h1 style = "Font-Size: 300%;" class = "AnimatedHead">A step toward a cleaner world
+</h1>
+</Div>
+<p style = "text-align: center;"><img src = "https://cdn.britannica.com/18/187118-050-848A8F58/leaves-ginkgo-tree.jpg" width = "50%"></p>
+
+<Div class = "Headings" style = "Background-Color: ff9001; Color: Black;">
+<h1 style = "Font-Size: 300%;"class = "AnimatedHead">Our Mission</h1>
+
+<UL class = "Links" style = "Font-Size: 300%; Color: Black;">
+<li>Making a safer environment for community</li>
+<li>Reducing the overwhlming global warming</li>
+<li>Recovering the lost forests and making a greener earth</li>
+<li>Decreasing the impurities in air</li>
+</UL>
+</Div>
+<hr color = "White">
+<Div class = "Headings" style = "Background-Color: ff4200;">
+<h1 style = "Font-Size: 300%;" class = "AnimatedHead">What did we change</h1>
+
+<table border= 10 style = "margin-left:auto;margin-right:auto;Font-Size: 300%;" >
+<tr><th>Before we existed</th><th>After we existed</th></tr>
+<tr><td>X% average global warming </td><td>X% less avergae global warming</td></tr>
+<tr><td>X% less fauna </td><td>X% increase in local fauna</td></tr>
+<tr><td>X% pollution in area </td><td>X% less pollution in area</td></tr>
+</table>
+</div>
+<hr color = "White">
+
+<Div class = "Headings">
+<h1 style = "Font-Size: 300%;">Got A minute?</h1>
+
+<h1>Know more <a href = "https://akshanshkanojia.github.io/Web_Prog/About_Page.html" class = "Links">About</a> us <br>
+
+Leave a <a href = "https://akshanshkanojia.github.io/Web_Prog/Feedback_Page.html" class = "Links">Feedback</a>
+</h1>
+</Div >
 </body>
 </html>
