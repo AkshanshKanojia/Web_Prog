@@ -1,0 +1,68 @@
+<html>
+<head>
+<style>
+h1
+{
+background-color: red;
+animation-name: anim;
+animation-duration: 4s;
+animation-delay: 0s;
+animation-iteration-count: infinite;
+}
+@keyframes anim{
+from{background-color: red;}
+to{background-color: blue;}
+}
+h2
+{
+background-color: purple;
+}
+h3
+{
+background-color: violet;
+}
+h4
+{
+background-color: cyan ;
+color: brown;
+}
+</style>
+</head>
+
+<body>
+<script>
+var z = window.prompt("enter your grade");
+var a =12;
+var b =3
+document.write("<h1>"+(a+b)+"<br>"+"</h1>");
+document.write("<h2>"+(a-b)+"<br>"+"</h2>");
+document.write("<h3>"+(a*b)+"<br>"+"</h3>");
+document.write("<h4>"+(a/b)+"<br>"+"</h4>");
+if(z >90)
+{
+document.write("<h4>"+"your grade is A"+"<br>"+"</h4>");
+}
+else if(z <=90&&z>80)
+{
+document.write("<h4>"+"your grade is B"+"<br>"+"</h4>");
+}
+else if(z <=80&&z>70)
+{
+document.write("<h4>"+"your grade is C"+"<br>"+"</h4>");
+}
+else if(z <=70&&z>60)
+{
+document.write("<h4>"+"your grade is D"+"<br>"+"</h4>");
+}
+else if(z <=60&&z>50)
+{
+document.write("<h4>"+"your grade is E"+"<br>"+"</h4>");
+}
+else
+{
+document.write("<h4>"+"F"+"<br>"+"</h4>");
+}
+
+</script>
+</body>
+</html>
