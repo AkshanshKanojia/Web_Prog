@@ -38,6 +38,7 @@ document.write("<h1>"+(a+b)+"<br>"+"</h1>");
 document.write("<h2>"+(a-b)+"<br>"+"</h2>");
 document.write("<h3>"+(a*b)+"<br>"+"</h3>");
 document.write("<h4>"+(a/b)+"<br>"+"</h4>");
+
 if(z >90)
 {
 document.write("<h4>"+"your grade is A"+"<br>"+"</h4>");
@@ -62,7 +63,44 @@ else
 {
 document.write("<h4>"+"F"+"<br>"+"</h4>");
 }
+prime(z);
+function prime (num)
+{
+var x = parseInt(num);
+var IsPrime = true;
+for(var i=2;i<x;i++)
+{
+if(x%i ==0)
+{
+IsPrime = false;
+break;
+}
+}
+var outp = (IsPrime)?"it is prime":"it is not prime";
+document.write(outp);
+}
 
+function func(a,b,c)
+{
+this.a=a;
+this.b=b;
+this.c=c;
+var ar = new Array(1,2,3,7,8,9);
+
+for(var v in ar)
+{
+document.write("<br>");
+document.write(ar[v]+"<br>");
+}
+}
+var f1 = new func(12,"abc",3);
+document.write(f1.a+"<br>"+f1.b+"<br>"+f1.c);
+var d = new Date();
+document.write("<br>"+d.getMonth());
 </script>
+<form>
+<input type = "button" value = "prime">
+</form>
 </body>
+
 </html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> Events </title>
+</head>
+
+<body bgcolor = "Blue">
+<script>
+function Clickfunc()
+{
+alert("Clicked");
+}
+function KeyUp()
+{
+var e = document.getElementById("TextBox");
+e.value = e.value.toUpperCase();
+}
+function MouseHover()
+{
+var x = document.getElementById("mouse");
+x.style.display = 'none';
+}
+
+</script>
+</body>
+<button type = "button" onclick = "Clickfunc()">Click Event</button>
+<input type ="text" id="TextBox" onkeyup = "KeyUp()">
+<div id = "mouse" onmouseover ="MouseHover()"
+style = "background-color: Green;height:200px;width:200px">
+</div>
+</html>
